@@ -9,8 +9,9 @@ import java.util.List;
 
 @RestController
 public class MessagesController {
+
     @GetMapping("/messages")
     public ResponseEntity<List<String>> messages() {
-        return ResponseEntity.ok(Arrays.asList("Message 1", "Message 2", "Message 3"));
+        return ResponseEntity.ok(Arrays.asList("first", "second"));
     }
 }
